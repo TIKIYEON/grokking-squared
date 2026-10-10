@@ -43,4 +43,5 @@ plt.plot(fracs, meds)  # blue median like paper
 plt.yscale("log"); plt.ylim(2e2, 1.2e4)
 plt.axvline(0.4, linestyle="--")
 plt.xlabel("training data fraction"); plt.ylabel("Steps to RQI>0.95")
+plt.title("Fig. 4(b): Empirical Phase Transition")
 plt.legend(); plt.savefig("fig4b_repro.png")
