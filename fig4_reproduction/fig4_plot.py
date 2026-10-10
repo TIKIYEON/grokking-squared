@@ -2,6 +2,8 @@ import os
 import sys
 
 import numpy as np
+import torch
+torch.set_num_threads(1)
 
 sys.path.insert(
     0,
@@ -25,6 +27,7 @@ for train_num in train_nums:
             dic = train_add(train_num=train_num, seed=seed, steps=1, eff_steps=1)
         success_count += dic["dof"] == 2
     probs.append(success_count / seeds)
+    print(train_num, probs[-1], flush=True)
 
 fontsize = 15
 plt.plot(train_nums / dic["all_num"], probs)
