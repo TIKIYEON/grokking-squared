@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "original_result_files_unchanged": 706,
+  "checked_scripts": [
+    "check_discrepancies.py",
+    "compare_to_paper.py",
+    "notebook_source.py",
+    "plot_fig6b.py",
+    "run_fig6b.py",
+    "verify_results.py",
+    "verify_source.py"
+  ],
+  "original_adapter_sha256": "10135e1f5b1bcef79819f228c7883bb18a6a1254ecafa07d95a5860dcf23c254",
+  "submission_adapter_sha256": "2e82eb7daa352937d2a8f706b9c03112e434d5bdd31b9989a60aeb187fe9358d",
+  "original_adapter_hash_matches_run_manifest": true,
+  "comparison_steps": 100,
+  "learning_rate": 0.0001,
+  "weight_decay": 10,
+  "checks": {
+    "model_tensors": {
+      "enc.l1.weight": true,
+      "enc.l1.bias": true,
+      "enc.l2.weight": true,
+      "enc.l2.bias": true,
+      "enc.l3.weight": true,
+      "enc.l3.bias": true,
+      "dec.net.l1.weight": true,
+      "dec.net.l1.bias": true,
+      "dec.net.l2.weight": true,
+      "dec.net.l2.bias": true,
+      "dec.net.l3.weight": true,
+      "dec.net.l3.bias": true
+    },
+    "embeddings_equal": true,
+    "targets_equal": true,
+    "train_split_equal": true,
+    "validation_split_equal": true,
+    "curves": {
+      "step": true,
+      "acc_train": true,
+      "acc_test": true,
+      "loss_train": true
+    },
+    "metrics": {
+      "iter_train": true,
+      "iter_test": true,
+      "reached_train": true,
+      "reached_test": true,
+      "final_acc_train": true,
+      "final_acc_test": true,
+      "final_loss_train": true,
+      "val_below_last10000": true
+    }
+  },
+  "regenerated_figure_checks": {
+    "fig6b_phase_data.npz": {
+      "eta_decs": true,
+      "wds": true,
+      "steps": true,
+      "threshold": true,
+      "train_iters": true,
+      "test_iters": true,
+      "phase_wd_by_lr": true,
+      "source": true
+    },
+    "fig6b_comparison.npz": {
+      "published": true,
+      "ours": true,
+      "agree": true,
+      "eta_decs": true,
+      "wds": true,
+      "steps": true,
+      "threshold": true,
+      "source": true,
+      "confusion_matrix": true
+    },
+    "fig6b_phase_table.csv": true,
+    "fig6b_comparison.csv": true,
+    "fig6b_comparison_stacked.png": true,
+    "fig6b.png": true,
+    "fig6b_rawgrid.png": true
+  },
+  "reference_pixels_match": 194010,
+  "matching_classifications": 173,
+  "total_classifications": 176,
+  "brief_crossing_rerun": {
+    "steps": 5000,
+    "first_train_crossing": 3146,
+    "measurements_at_or_above_90": 39,
+    "original_saved_samples_match": 50,
+    "rqi_enabled_disabled_accuracy_matches": 10000
+  }
+}

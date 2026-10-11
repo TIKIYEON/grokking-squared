@@ -1,0 +1,36 @@
+{
+  "model_tensors": {
+    "enc.l1.weight": true,
+    "enc.l1.bias": true,
+    "enc.l2.weight": true,
+    "enc.l2.bias": true,
+    "enc.l3.weight": true,
+    "enc.l3.bias": true,
+    "dec.net.l1.weight": true,
+    "dec.net.l1.bias": true,
+    "dec.net.l2.weight": true,
+    "dec.net.l2.bias": true,
+    "dec.net.l3.weight": true,
+    "dec.net.l3.bias": true
+  },
+  "latent_equal": true,
+  "targets_equal": true,
+  "curve_arrays": {
+    "step": true,
+    "acc_train": true,
+    "acc_test": true,
+    "loss_train": true
+  },
+  "matching_accuracy_entries": 10000,
+  "total_accuracy_entries": 10000,
+  "crossings": {
+    "production": [
+      3146,
+      4999
+    ],
+    "original": [
+      3146,
+      4999
+    ]
+  }
+}

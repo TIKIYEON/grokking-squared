@@ -1,0 +1,22 @@
+{
+  "step": {
+    "equal": true,
+    "matching": 50,
+    "total": 50
+  },
+  "acc_train": {
+    "equal": true,
+    "matching": 50,
+    "total": 50
+  },
+  "acc_test": {
+    "equal": true,
+    "matching": 50,
+    "total": 50
+  },
+  "loss_train": {
+    "equal": true,
+    "matching": 50,
+    "total": 50
+  }
+}

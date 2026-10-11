@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "command": "repro/verify_source.py",
+  "provenance": {
+    "source_path": "upstream/grokking-squared/phase_diagram_plot/phase_diagram.ipynb",
+    "notebook_sha256": "05d44c3a61524ddbe393e50adfec5571e8ac83232fc67eac5cc24a3aa9945b80",
+    "source_sha256": "849ba9b003624dca489a2bd20523148766bba268f670b056c669b479b90534fd",
+    "source_cells": [
+      0,
+      1
+    ],
+    "transformations": [
+      "Read code cells 0 and 1; preserve original initialization and training/evaluation statements.",
+      "Omit unused scipy imports; retain the original random input templates and unused encoder.",
+      "Omit only the per-step RQI diagnostic block beginning with latent_scale.",
+      "Stop before upstream np.savetxt calls; return measurements instead of writing upstream files.",
+      "Override logging frequency immediately before training; append read-only curve measurements.",
+      "Set seed through the original function's global variable; retain train_num=45 and wd1_mode=0."
+    ],
+    "validation_accuracy_timing": "after both optimizer steps",
+    "training_loss_timing": "before both optimizer steps",
+    "threshold_train_acc": 0.9,
+    "threshold_test_acc": 0.9,
+    "weight_decay_reprs": 0.0,
+    "eta_reprs": 0.001,
+    "train_num": 45
+  },
+  "torch_version": "1.13.1+cu117",
+  "numpy_version": "1.26.4",
+  "torch_threads": 1,
+  "reference_comparison": {
+    "steps": 100,
+    "eta_dec": 0.0001,
+    "weight_decay_dec": 10,
+    "model_tensors_equal": 12,
+    "model_tensors_total": 12,
+    "accuracy_entries_equal": 200,
+    "accuracy_entries_total": 200
+  },
+  "control": {
+    "steps": 2500,
+    "eta_dec": 0.0001,
+    "weight_decay_dec": 0,
+    "expected_iter_train": 1650,
+    "expected_iter_test": 2076,
+    "iter_train": 1650,
+    "iter_test": 2076,
+    "reached_train": true,
+    "reached_test": true,
+    "final_acc_train": 0.9777777777777777,
+    "final_acc_test": 0.9,
+    "final_loss_train": 0.07437165081501007,
+    "val_below_last10000": 2076
+  },
+  "checks": {
+    "model_tensors": {
+      "enc.l1.weight": true,
+      "enc.l1.bias": true,
+      "enc.l2.weight": true,
+      "enc.l2.bias": true,
+      "enc.l3.weight": true,
+      "enc.l3.bias": true,
+      "dec.net.l1.weight": true,
+      "dec.net.l1.bias": true,
+      "dec.net.l2.weight": true,
+      "dec.net.l2.bias": true,
+      "dec.net.l3.weight": true,
+      "dec.net.l3.bias": true
+    },
+    "latent_bitwise_equal": true,
+    "targets_bitwise_equal": true,
+    "train_ids_equal": true,
+    "test_ids_equal": true,
+    "curves": {
+      "step": true,
+      "acc_train": true,
+      "acc_test": true,
+      "loss_train": true
+    },
+    "metrics": {
+      "iter_train": true,
+      "iter_test": true,
+      "reached_train": true,
+      "reached_test": true,
+      "final_acc_train": true,
+      "final_acc_test": true,
+      "final_loss_train": true,
+      "val_below_last10000": true
+    },
+    "control_crossings_equal_hdf5": true,
+    "notebook_unchanged": true
+  },
+  "elapsed_seconds": 3.332627930001763
+}

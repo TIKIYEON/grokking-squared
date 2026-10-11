@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.log
+*.tmp-*
+.sweep.lock
+runs/
+# These contain the same plots as the files ending in _stacked.
+figures/fig6b_comparison.pdf
+figures/fig6b_comparison.png

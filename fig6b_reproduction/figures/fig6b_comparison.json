@@ -1,0 +1,53 @@
+{
+  "source": "fresh",
+  "source_path": "fig6b_reproduction/results/fig6b",
+  "grid_shape_wd_by_lr": [
+    11,
+    16
+  ],
+  "steps": 100000,
+  "threshold": 1000.0,
+  "matching_cells": 173,
+  "total_cells": 176,
+  "agreement_fraction": 0.9829545454545454,
+  "reference_matching_pixels": 194010,
+  "reference_total_pixels": 194010,
+  "paper_phase_counts": {
+    "comprehension": 17,
+    "grokking": 60,
+    "memorization": 60,
+    "confusion": 39
+  },
+  "input_phase_counts": {
+    "comprehension": 17,
+    "grokking": 60,
+    "memorization": 61,
+    "confusion": 38
+  },
+  "confusion_matrix_paper_by_input": [
+    [
+      17,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      59,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      59,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      38
+    ]
+  ]
+}

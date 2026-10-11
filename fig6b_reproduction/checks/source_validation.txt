@@ -1,0 +1,10 @@
+passed: True
+Original RQI loop versus production adapter, 100 steps:
+  model tensors bitwise equal: 12/12
+  latent bitwise equal: True
+  accuracy entries exact: 200/200
+  all curve arrays exact: True
+2500-step control (lr=1e-4, wd=0):
+  measured crossings: 1650, 2076
+  released HDF5 crossings: 1650, 2076
+notebook unchanged: True

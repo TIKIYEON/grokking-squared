@@ -1,0 +1,16 @@
+{
+  "threads1_crossings": [
+    3146,
+    4999
+  ],
+  "threads2_crossings": [
+    4580,
+    4999
+  ],
+  "threads1_high_count": 39,
+  "threads2_high_count": 154,
+  "threads1_max_train": 0.9111111111111111,
+  "threads2_max_train": 0.9111111111111111,
+  "first_accuracy_difference": 722,
+  "first_loss_difference": 1
+}
