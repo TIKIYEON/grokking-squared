@@ -1,0 +1,85 @@
+{
+  "iter_train": 4580,
+  "iter_test": 4999,
+  "reached_train": true,
+  "reached_test": false,
+  "final_acc_train": 0.8888888888888888,
+  "final_acc_test": 0.5,
+  "final_loss_train": 0.2559870183467865,
+  "val_below_last10000": 5000,
+  "provenance": {
+    "source_path": "upstream/grokking-squared/phase_diagram_plot/phase_diagram.ipynb",
+    "notebook_sha256": "05d44c3a61524ddbe393e50adfec5571e8ac83232fc67eac5cc24a3aa9945b80",
+    "source_sha256": "849ba9b003624dca489a2bd20523148766bba268f670b056c669b479b90534fd",
+    "source_cells": [
+      0,
+      1
+    ],
+    "transformations": [
+      "Read code cells 0 and 1; preserve original initialization and training/evaluation statements.",
+      "Omit unused scipy imports; retain the original random input templates and unused encoder.",
+      "Omit only the per-step RQI diagnostic block beginning with latent_scale.",
+      "Stop before upstream np.savetxt calls; return measurements instead of writing upstream files.",
+      "Override logging frequency immediately before training; append read-only curve measurements.",
+      "Set seed through the original function's global variable; retain train_num=45 and wd1_mode=0."
+    ],
+    "validation_accuracy_timing": "after both optimizer steps",
+    "training_loss_timing": "before both optimizer steps",
+    "threshold_train_acc": 0.9,
+    "threshold_test_acc": 0.9,
+    "weight_decay_reprs": 0.0,
+    "eta_reprs": 0.001,
+    "train_num": 45
+  },
+  "name": "production_threads2",
+  "threads": 2,
+  "include_rqi": false,
+  "elapsed_seconds": 56.18971813999815,
+  "lr": 0.000630957344480193,
+  "lr_hex": "0x1.4acda94717d66p-11",
+  "train_above_threshold_count": 154,
+  "train_above_threshold_intervals": [
+    [
+      4580,
+      4580,
+      1
+    ],
+    [
+      4582,
+      4586,
+      5
+    ],
+    [
+      4726,
+      4726,
+      1
+    ],
+    [
+      4728,
+      4869,
+      142
+    ],
+    [
+      4871,
+      4871,
+      1
+    ],
+    [
+      4879,
+      4880,
+      2
+    ],
+    [
+      4884,
+      4884,
+      1
+    ],
+    [
+      4887,
+      4887,
+      1
+    ]
+  ],
+  "max_train": 0.9111111111111111,
+  "min_train_after_first_cross": 0.8888888888888888
+}

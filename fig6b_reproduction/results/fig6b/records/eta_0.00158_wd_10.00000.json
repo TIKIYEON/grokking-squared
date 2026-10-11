@@ -1,0 +1,45 @@
+{
+  "iter_train": 99999,
+  "iter_test": 99999,
+  "reached_train": false,
+  "reached_test": false,
+  "final_acc_train": 0.8,
+  "final_acc_test": 0.7,
+  "final_loss_train": 0.3041224181652069,
+  "val_below_last10000": 10000,
+  "provenance": {
+    "source_path": "upstream/grokking-squared/phase_diagram_plot/phase_diagram.ipynb",
+    "notebook_sha256": "05d44c3a61524ddbe393e50adfec5571e8ac83232fc67eac5cc24a3aa9945b80",
+    "source_sha256": "849ba9b003624dca489a2bd20523148766bba268f670b056c669b479b90534fd",
+    "source_cells": [
+      0,
+      1
+    ],
+    "transformations": [
+      "Read code cells 0 and 1; preserve original initialization and training/evaluation statements.",
+      "Omit unused scipy imports; retain the original random input templates and unused encoder.",
+      "Omit only the per-step RQI diagnostic block beginning with latent_scale.",
+      "Stop before upstream np.savetxt calls; return measurements instead of writing upstream files.",
+      "Override logging frequency immediately before training; append read-only curve measurements.",
+      "Set seed through the original function's global variable; retain train_num=45 and wd1_mode=0."
+    ],
+    "validation_accuracy_timing": "after both optimizer steps",
+    "training_loss_timing": "before both optimizer steps",
+    "threshold_train_acc": 0.9,
+    "threshold_test_acc": 0.9,
+    "weight_decay_reprs": 0.0,
+    "eta_reprs": 0.001,
+    "train_num": 45
+  },
+  "status": "ok",
+  "eta_dec": 0.001584893192461114,
+  "weight_decay_dec": 10.0,
+  "steps": 100000,
+  "seed": 58,
+  "curve_every": 100,
+  "config_id": "a88ad96bcef381bd7b93da317645282be58c62eb54d248ffc91a00d152da853a",
+  "runtime_s": 342.6360194683075,
+  "host": "KP-ALM-PF67XZ3Q",
+  "pid": 4244,
+  "torch_threads": 1
+}

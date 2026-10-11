@@ -1,0 +1,65 @@
+{
+  "iter_train": 29996,
+  "iter_test": 76849,
+  "reached_train": true,
+  "reached_test": true,
+  "final_acc_train": 0.9777777777777777,
+  "final_acc_test": 0.9,
+  "final_loss_train": 0.10398238897323608,
+  "val_below_last10000": 0,
+  "provenance": {
+    "source_path": "upstream/grokking-squared/phase_diagram_plot/phase_diagram.ipynb",
+    "notebook_sha256": "05d44c3a61524ddbe393e50adfec5571e8ac83232fc67eac5cc24a3aa9945b80",
+    "source_sha256": "849ba9b003624dca489a2bd20523148766bba268f670b056c669b479b90534fd",
+    "source_cells": [
+      0,
+      1
+    ],
+    "transformations": [
+      "Read code cells 0 and 1; preserve original initialization and training/evaluation statements.",
+      "Omit unused scipy imports; retain the original random input templates and unused encoder.",
+      "Omit only the per-step RQI diagnostic block beginning with latent_scale.",
+      "Stop before upstream np.savetxt calls; return measurements instead of writing upstream files.",
+      "Override logging frequency immediately before training; append read-only curve measurements.",
+      "Set seed through the original function's global variable; retain train_num=45 and wd1_mode=0."
+    ],
+    "validation_accuracy_timing": "after both optimizer steps",
+    "training_loss_timing": "before both optimizer steps",
+    "threshold_train_acc": 0.9,
+    "threshold_test_acc": 0.9,
+    "weight_decay_reprs": 0.0,
+    "eta_reprs": 0.001,
+    "train_num": 45
+  },
+  "lr": 1e-05,
+  "weight_decay": 8,
+  "threads": 2,
+  "include_rqi": false,
+  "reference_crossings": [
+    48062,
+    99999
+  ],
+  "runtime_seconds": 2224.5087904930115,
+  "production_curve_parity": {
+    "step": {
+      "equal": true,
+      "matching": 1001,
+      "total": 1001
+    },
+    "acc_train": {
+      "equal": false,
+      "matching": 1000,
+      "total": 1001
+    },
+    "acc_test": {
+      "equal": true,
+      "matching": 1001,
+      "total": 1001
+    },
+    "loss_train": {
+      "equal": false,
+      "matching": 135,
+      "total": 1001
+    }
+  }
+}
